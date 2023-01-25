@@ -1,0 +1,55 @@
+/* Use of Background images Gif 3.2.1 C */
+/* Use of CSS contextual selectors 3.2.1 B */
+/* Use of CSS background styles 3.2.1 B */
+/* Use of CSS opacity features to two images to appear semi-transparent 3.2.1 H */
+html{
+    background-image: url("events_bg.gif");
+    opacity: 93%;
+}
+
+p#smoke{
+    /* Use of CSS styles for color (RGBA & HSLA) 3.2.1 C */
+    background-color: whitesmoke;
+}
+.table{
+    font-size: 30px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+/* Use of CSS contextual selectors 3.2.1 B */
+/* Use of CSS styles for color (RGBA & HSLA) 3.2.1 C */
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+}
+/* Use of CSS contextual selectors 3.2.1 B */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+/* Use of CSS contextual selectors 3.2.1 B */  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+/* Use of CSS styles for color (RGBA & HSLA) 3.2.1 C */
+tr:nth-child(odd) {
+    background-color: #D6EEEE;
+}
+/* Use of CSS styles for color (RGBA & HSLA) 3.2.1 C */
+tr:nth-child(even) {
+    background-color: lightskyblue;
+}
+/* Use of CSS styles for color (RGBA & HSLA) 3.2.1 C */
+th:hover, td:hover{
+    background-color: lightgoldenrodyellow;
+}
+/* Use of dynamic pseudo-classes 3.2.1 D */
+th:link, td:link{
+    background-color: tomato;
+}
+/* Use of dynamic pseudo-classes 3.2.1 D */
+th:active, td:active{
+    background-color: lightseagreen;
+}

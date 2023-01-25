@@ -1,0 +1,11 @@
+/* Use of CSS text and box shadows 3.2.1 G */
+h1{
+    text-align: center;
+    text-shadow: 3px 3px grey;
+    box-shadow: 3px 5px lightseagreen;
+}
+
+h1 img{
+    width: 50px;
+    height: auto;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--Use of Use of appropriate <meta >tags 3.2.1 E-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link href="pc_grids.css" rel="stylesheet" />
+    <link href="contact_us.css" rel="stylesheet" />
+    <link href="contact_form.css" rel="stylesheet" />
+    <script src="validate_email.js" defer></script>
+    <script src="count_down.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+      <div id="logo"> 
+         <a href="pc_about.html">
+            <img src="logo.png" width="100px" >
+         </a>
+      </div> 
+      <img src="header3.jpg" alt="Royal Clash" />
+      <cite><p>CLASH ROYALE</p></cite>
+
+    </header>
+
+    <h1>Contact Us!<img src="laugh.gif" ></h1>
+
+    <form name="form1" id="survey" >
+	  
+        <fieldset id="custInfo">
+           <legend>Customer Information</legend>
+           
+           <div class="formRow">
+              <label for="name">Name*</label>
+              <input name="custName" id="name" type="text" placeholder="first and last name" autofocus />
+           </div>
+
+           <div class="formRow">            
+              <label for="street">Street address</label>
+              <input name="custStreet" id="street" type="text" />
+           </div>
+
+           <div class="formRow"> 
+              <label for="city">City</label>
+              <input name="custCity" id="city" type="text"  />
+           </div>
+
+           <div class="formRow"> 
+              <label for="state">State</label>
+              <input name="custState" id="state" type="text" />
+           </div>
+
+           <div class="formRow"> 
+              <label for="zip">Postal code</label>
+              <input name="custZip" id="zip" type="text" placeholder="xxx xxx" 
+               pattern="^\d{5}(-\d{4})?$" />
+           </div>
+
+           <div class="formRow"> 
+              <label for="phone">Phone number(optional)</label>
+              <input name="custPhone" id="phone" type="tel" placeholder="(xxx) xxx-xxxx"
+               >
+           </div>
+
+           <div class="formRow"> 
+              <label for="mail">E-mail*</label>
+              <input name="text1" id="mail" type="text" required/>
+           </div>
+
+           <div class="formRow">
+              <label for="info">Where did you hear about us?<br />(select all that apply)</label>
+              <select name="infoSrc" id="info" size="5" multiple>
+              <optgroup label="Online">
+                 <option value="AppStore">AppStore</option>
+                 <option value="Google">Google</option>
+                 <option value="Social Media">Social Media</option>
+               </optgroup>
+               <optgroup label="Offline">
+                 <option value="word" selected>Word of Mouth</option>
+                 <option value="other">Other</option>
+               </optgroup>
+              </select>
+           </div>
+
+           <div class="formRow">
+              <label for="dish">What's your favorite Game?</label>
+              <input name="favDish" id="dish" type="text" list="dishType" />
+              <datalist id="dishType">
+                 <option value="Brawl Stars" >
+                 <option value="Boom Beach" >
+                 <option value="Clash Royale" >
+                 <option value="Clash of Clans" >
+                 
+              </datalist>
+           </div>            
+
+           <div class="formRow">
+              <label for="meet_friends">How ofen do you meet your friends in game?</label>
+              <input name="meet_friends" id="meet_friends" type="number"
+                     value="0" step="1" min="0" max="20" />
+           </div>
+           
+           <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+           <label for="mail">Add me to your mailing list for inclusive GIFTS Online!!</label>
+           
+        </fieldset>
+
+        <fieldset id="expInfo">
+           <legend>Share Your Experience</legend>
+           
+           <div class="formRow">
+              <label for="Date">Enter the Date</label>
+              <input name="Date" id="Date" type="date" />
+           </div>  
+
+           <div class="formRow">
+              <label for="gamelist">Game List</label>
+              <select name="gamelist" id="gamelist" size="3">
+              <optgroup label="Game List">
+                 <option value="game1">Clash Mini</option>
+                 <option value="game2" >Clash Quest</option>
+                 <option value="game3" >Hay Day</option>
+                 <option value="game4" >Hay Day Pop</option>
+                 <option value="game5" selected>Brawl Stars</option>           
+                 <option value="game6" >Boom Beach</option>              
+                 <option value="game7" >Clash Royale</option>          
+                 <option value="game8" >Clash of Clans</option> 
+               </optgroup>
+              </select>
+           </div>
+
+           <div class="formRow">
+              <label>Are you satisfied with game environment?</label>
+              <fieldset class="optGroup">
+                 <label for="fYes">Yes</label>
+                 <input name="likegame" id="fYes" value="yes" type="radio" />
+                 <label for="fNo">No</label>
+                 <input name="likegame" id="fNo" value="no" type="radio" />
+              </fieldset>
+           </div>
+
+           <div class="formRow">
+              <label>Do you like to join our community for more tips and builds? </label>
+              <fieldset class="optGroup">
+                 <label for="cYes">Yes</label>
+                 <input name="oCorrect" id="cYes" value="yes" type="radio" />
+                 <label for="cNo">No</label>
+                 <input name="oCorrect" id="cNo" value="no" type="radio" />
+              </fieldset>
+           </div>
+
+           <div class="formRow">
+              <label>Do you like to join the beta test for our future games?</label>
+              <fieldset class="optGroup">
+                 <label for="hYes">Yes</label>
+                 <input name="foodHot" id="hYes" value="yes" type="radio" />
+                 <label for="hNo">No</label>
+                 <input name="foodHot" id="hNo" value="no" type="radio" />
+              </fieldset>
+           </div>
+
+           <div class="formRow">
+              <label for="rangeBox">Rate your game experience<br />
+                     (0=poor; 10=great)</label>
+              0
+              <input name="serviceRate" id="rangeBox" type="range"
+                     value="5" step="1" min="0" max="10" />
+              10
+           </div>
+
+           <label for="commBox">Tell us more about your experience!</label>
+           <textarea name="custExp" id="commBox" rows="5" cols="15" wrap="soft"></textarea>
+           
+        </fieldset>  
+
+        <div class="bu1" id="buttons">
+           <input type="submit" value="Submit My Survey" onclick="validateEmail(document.form1.text1)"/>
+           <input type="reset" value="Cancel" />
+        </div>
+     </form>
+    
+  </section>
+
+  <a  href="#" >
+   <img class="rocket" src="rocket.gif">
+  </a>
+
+   <footer class="dj">
+      <img src="dj.gif"> Last Update
+      <p id="mod" > 
+      </p>
+   </footer>
+</body>
+</html>

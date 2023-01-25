@@ -1,0 +1,86 @@
+/* Use of appropriate form elements including some of the new HTML5 form widgets 3.2.1 A */
+/* Apply appropriate styles to web forms 3.2.1 B */
+form#survey {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+ }
+ 
+/* Use of appropriate form elements including some of the new HTML5 form widgets 3.2.1 A */
+/* Apply appropriate styles to web forms 3.2.1 B */
+ form#survey > fieldset {
+    border-radius: 20px;
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 20px;
+    margin: 20px;
+ }
+ /* Use of appropriate form elements including some of the new HTML5 form widgets 3.2.1 A */
+ /* Apply appropriate styles to web forms 3.2.1 B */
+ div.formRow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 10px 3px;
+ }
+ 
+ /* Apply appropriate styles to web forms 3.2.1 B */
+ div.formRow > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+ }
+ 
+ 
+ legend {
+    padding: 5px;
+ }
+ 
+/* Apply appropriate styles to web forms 3.2.1 B */
+ textarea {
+    margin: 20px;
+    height: 30px;
+    width: 95%;
+    float: left;
+ }
+
+ /* Apply appropriate styles to web forms 3.2.1 B */
+ div.formRow > input#dineSpin {
+    -webkit-flex: 0 0 50px;
+    flex: 0 0 50px;
+ }
+ 
+ input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/* Apply appropriate styles to web forms 3.2.1 B */
+#logo{ 
+	position:fixed; 
+	top:0; 
+	left:0px; 
+} 
+
+/* Apply appropriate styles to web forms 3.2.1 B */
+.rocket{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   width: 10%;
+}
+
+/* Apply appropriate styles to web forms 3.2.1 B */
+footer{
+   /* Use of CSS styles for color (RGBA & HSLA) 3.2.1 C */
+   background-color: lightyellow;
+   padding: 7px;
+}
+
+/* Apply appropriate styles to web forms 3.2.1 B */
+header p{
+   text-align: center;
+}
